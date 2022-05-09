@@ -1,11 +1,11 @@
 export function renderListItem(animal) {
     const div = document.createElement('div');
-    div.classList.add('animal');
     div.style.top = animal.top;
     div.style.left = animal.left;
+    div.classList.add('animal');
 
     const img = document.createElement('img');
-    img.src = `./assets/${animal.type}.svg`;
+    img.src = `../assets/${animal.type}.svg`;
 
     const nameSpan = document.createElement('span');
     nameSpan.textContent = animal.name;
